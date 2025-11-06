@@ -1,0 +1,226 @@
+/* Importando a fonte Montserrat */
+@font-face {
+    font-family: montserrat;
+    src: url(/arquivos/Montserrat-VariableFont_wght.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Para melhor controle de layout */
+    
+}
+
+p{
+    font-family: montserrat;
+}
+/* Estilo da seção principal */
+.hero-section {
+    background: linear-gradient(135deg, #007B7F, #16DCDC);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hero-section h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-family: "Stack Sans Notch", sans-serif;
+}
+
+.subtitle {
+    font-size: 1.5em;
+    opacity: 0.9;
+    margin-bottom: 30px;
+}
+
+/* Estilo dos cards de características */
+.features-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 250px;
+    max-width: 350px;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card h3 {
+    color: #007B7F;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+/* Seção CTA (Call to Action) */
+.cta-section {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 60px 20px;
+    margin-top: 40px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #007B7F;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #16DCDC;
+}
+
+/* Melhorias gerais */
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #ffffff;
+}
+
+h1, h2, h3 {
+    font-family: "Stack Sans Notch", sans-serif;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2em;
+    }
+    
+    .subtitle {
+        font-size: 1.2em;
+    }
+    
+    .features-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .feature-card {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Estilo do menu */
+.layout_menu {
+    display: flex;
+    justify-content: center;
+    font-family: montserrat;
+    background-color: #007B7F; /* Cor de fundo mais escura */
+    padding: 10px 0; /* Espaçamento superior e inferior */
+}
+
+.layout_menu ul {
+    font-family: montserrat;
+    font-size: 1.2rem;
+    display: flex; /* Deixa o menu horizontal */
+    justify-content: center; /* Centraliza os itens */
+    list-style-type: none; /* Remove os marcadores */
+}
+
+.layout_menu li {
+    margin: 0 15px; /* Espaçamento entre os itens do menu */
+}
+
+.layout_menu a {
+    display: block;
+    padding: 10px 15px; /* Preenchimento interno */
+    color: white; /* Cor do texto */
+    background-color: transparent; /* Fundo transparente */
+    text-decoration: none; /* Remove sublinhado */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease; /* Efeito de transição */
+}
+
+.layout_menu a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Efeito de destaque ao passar o mouse */
+}
+
+/* Estilo das tabelas */
+.table {
+    width: 100%;
+    border-collapse: collapse; /* Remove espaços entre as células */
+    margin: 20px 0; /* Margem superior e inferior */
+}
+
+.table th, .table td {
+    border: 1px solid #ddd; /* Borda das células */
+    padding: 8px; /* Preenchimento interno */
+    text-align: left; /* Alinhamento do texto */
+}
+
+.table th {
+    background-color: rgb(22, 220, 220); /* Cor de fundo do cabeçalho */
+    color: white; /* Cor do texto do cabeçalho */
+}
+
+/* Estilo dos formulários */
+form {
+    margin: 20px; /* Margem ao redor do formulário */
+    padding: 20px; /* Preenchimento interno */
+    border: 1px solid #ddd; /* Borda do formulário */
+    border-radius: 5px; /* Bordas arredondadas */
+    background-color: #f9f9f9; /* Cor de fundo do formulário */
+}
+
+form label {
+    display: block; /* Faz o label ocupar toda a largura */
+    margin-bottom: 5px; /* Espaço abaixo do label */
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%; /* Largura total */
+    padding: 10px; /* Preenchimento interno */
+    margin-bottom: 15px; /* Espaço abaixo do campo */
+    border: 1px solid #ccc; /* Borda do campo */
+    border-radius: 4px; /* Bordas arredondadas */
+}
+
+/* Estilo do botão */
+button {
+    background-color: rgb(22, 220, 220); /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    padding: 10px 15px; /* Preenchimento interno */
+    border: none; /* Remove borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+}
+
+button:hover {
+    background-color: rgb(0, 150, 150); /* Cor ao passar o mouse */
+}
+
+/* Estilo do rodapé */
+footer {
+    text-align: center; /* Centraliza o texto */
+    padding: 10px; /* Preenchimento interno */
+    background-color: rgb(223, 213, 213); /* Cor de fundo do rodapé */
+    position: relative; /* Para posicionamento */
+    bottom: 0; /* Fixa na parte inferior */
+    width: 100%; /* Largura total */
+}
