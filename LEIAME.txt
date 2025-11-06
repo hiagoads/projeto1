@@ -1,0 +1,19 @@
+A ideia inicial foi criar uma carteira digital para clientes terem
+os dados de todos os cartões em um único lugar.
+
+Foi adicionado a area admin a novo arquivo de adicionar os dados
+onde será adicionado os dados visíveis para os usuários privando
+os dados sensíveis. Na área do cliente foi criado um formulario onde
+ele faz o cadastro do seu cartão e é enviado a um banco de dados separado
+onde o admin deverá pegar os dados e preencher no banco que ficará visível
+no site. 
+
+No sql foi criado 2 bancos o primeiro chamado de projeto 1 onde ficará armazenado
+os dados visíveis aos clientes do site, com 2 tabelas uma para armazenar 
+o nome, cidade e estado e outra para armazenar os dados não sensíveis do cartão.
+Ja no outro banco chamado de dados, foi criada a tabela cartoes para armazenar
+os dados dos cartões do cliente. 
+
+- Os códigos do sql estão na pasta ./arquivos
+- Para acessar a página principal acesse: localhost/MeuSite
+- Para acessar o painel admin acesse: localhost/MeuSite/admin
