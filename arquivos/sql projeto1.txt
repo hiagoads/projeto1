@@ -1,0 +1,10 @@
+CREATE TABLE `cartoes_cliente` ( -- padrão é `nome` TIPO(qtd))
+  `id` INT(11) NOT NULL AUTO_INCREMENT, -- auto preenche o id
+  `id_cliente` INT(11) NOT NULL, -- not null é para deixar o campo obrigatório
+  `nome_titular` VARCHAR(255) NOT NULL,
+  `ultimos_4_digitos` VARCHAR(4) NOT NULL,
+  `bandeira` VARCHAR(50) NULL COMMENT 'Ex: Visa, Mastercard',
+  `limite` DECIMAL(10, 2) NOT NULL DEFAULT 0.00,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
